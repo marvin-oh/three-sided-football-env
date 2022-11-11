@@ -33,7 +33,6 @@ behaviors:
 
 environment_parameters:
   ball_touch:
-  ball_touch:
     curriculum:
       - name: Lesson0 # The '-' is important as this is a list
         completion_criteria:
