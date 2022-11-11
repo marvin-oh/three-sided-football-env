@@ -70,7 +70,7 @@ public class SoccerEnvController : MonoBehaviour
         if (m_ResetTimer >= MaxEnvironmentSteps && MaxEnvironmentSteps > 0)
         {
             // Logging for Evaluation
-            GetComponent<EvalLogging>().LogWithoutGoal(m_ResetTimer, m_BlueAgentGroup.GetRegisteredAgents().Count);
+            GetComponent<EvalLogging>()?.LogWithoutGoal(m_ResetTimer, m_BlueAgentGroup.GetRegisteredAgents().Count);
 
             m_BlueAgentGroup.GroupEpisodeInterrupted();
             m_PurpleAgentGroup.GroupEpisodeInterrupted();
@@ -173,7 +173,7 @@ public class SoccerEnvController : MonoBehaviour
         }
 
         // Logging for Evaluation
-        GetComponent<EvalLogging>().LogWithGoal(m_ResetTimer, m_BlueAgentGroup.GetRegisteredAgents().Count, scoredTeam, concededTeam);
+        GetComponent<EvalLogging>()?.LogWithGoal(m_ResetTimer, m_BlueAgentGroup.GetRegisteredAgents().Count, scoredTeam, concededTeam);
 
         m_PurpleAgentGroup.EndGroupEpisode();
         m_BlueAgentGroup.EndGroupEpisode();

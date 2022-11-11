@@ -51,6 +51,8 @@ public class EvalLogging : MonoBehaviour
     void Start()
     {
         episodeLog = new EpisodeLog();
+
+        Time.timeScale = 15f;
     }
 
     public void LogWithGoal(int step, int _nAgentsPerGroup, Team scoredTeam, Team concededTeam)
