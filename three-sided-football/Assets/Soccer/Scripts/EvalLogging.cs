@@ -87,7 +87,7 @@ public class EvalLogging : MonoBehaviour
 
     private void SaveLog()
     {
-        using (var writer = new StreamWriter("experiment/log_" + experimentName + ".csv", append: true))
+        using (var writer = new StreamWriter("../experiment/log_" + experimentName + ".csv", append: true))
         {
             string line = "";
             line += episodeLog.episodeLength + ",";

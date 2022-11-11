@@ -32,6 +32,8 @@ public class SoccerEnvController : MonoBehaviour
     /// </summary>
 
     public GameObject ball;
+    public bool m_ChangableAgentCount;
+
     [HideInInspector]
     public Rigidbody ballRb;
     Vector3 m_BallStartingPos;
@@ -47,8 +49,6 @@ public class SoccerEnvController : MonoBehaviour
     private SimpleMultiAgentGroup m_GreenAgentGroup;
 
     private int m_ResetTimer;
-
-    bool m_ChangableAgentCount;
 
     EnvironmentParameters m_ResetParams;
 
